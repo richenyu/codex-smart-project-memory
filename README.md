@@ -83,6 +83,21 @@ python skill/codex-smart-project-memory/scripts/validate_memory_workspace.py --r
 
 If it helps you, star the repository so more Codex users can find it.
 
+## Beginner-Friendly Codex Starter Kit
+
+New to Codex? This project can also work as a practical Codex starter kit.
+
+It gives beginners a ready-made structure for:
+
+- setting up `AGENTS.md`
+- organizing project context
+- creating a Codex memory workspace
+- avoiding giant prompt dumps
+- keeping new Codex chats from starting cold
+- learning a real context engineering workflow by example
+
+If you are searching for a Codex beginner tool, Codex setup guide, Codex tutorial, AGENTS.md template, or AI coding agent memory workflow, this project is built for that use case.
+
 ## What It Fixes
 
 ### 1. New chats lose context
@@ -236,7 +251,7 @@ Codex can only reliably recover what is written into files. This project gives y
 
 ## Search Keywords
 
-Codex memory, Codex Skill, Codex project memory, persistent memory, AI agent memory, `AGENTS.md`, context engineering, project context, session continuity, smart project routing, developer tools, coding agent workflow.
+Codex memory, Codex Skill, OpenAI Codex, Codex starter kit, Codex beginner tool, Codex for beginners, Codex tutorial, Codex setup guide, Codex workflow, Codex tools, Codex project memory, persistent memory, AI agent memory, AI coding agent memory, coding agent starter kit, `AGENTS.md`, AGENTS.md template, context engineering, project context, session continuity, smart project routing, developer tools, coding agent workflow.
 
 ## Recommended GitHub Topics
 
