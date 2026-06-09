@@ -6,6 +6,8 @@ Codex Smart Project Memory is a lightweight Codex Skill and `AGENTS.md` workflow
 
 > Unofficial community project. Not affiliated with OpenAI.
 
+Built by **RICH**.
+
 ## Your Codex Is Smart. But New Sessions Still Forget.
 
 You open a new Codex window.
@@ -301,6 +303,8 @@ If you want Codex to stop starting from zero, try Codex Smart Project Memory tod
 Open an Issue for bugs, missing templates, or workflow ideas. Use Discussions for examples, setup questions, and improvement suggestions.
 
 ## Free Bonus And Setup Help
+
+Built by **RICH**.
 
 Want more Codex memory workflows, setup examples, and practical prompt patterns?
 
