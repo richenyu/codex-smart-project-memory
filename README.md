@@ -1,99 +1,117 @@
 # Codex Smart Project Memory
 
-A lightweight smart memory system for Codex that helps new sessions understand your projects, route context, and continue work without bloating the prompt.
+Make Codex feel less like a blank new chat and more like a project-aware coding partner.
 
-Give Codex smarter project memory with `AGENTS.md`, smart routing, session snapshots, asset indexes, and lightweight context recovery.
+Codex Smart Project Memory is a lightweight Codex Skill and `AGENTS.md` workflow that gives Codex persistent project context, smart routing, session handoffs, decision memory, and asset indexes without stuffing every prompt with old conversation history.
 
 > Unofficial community project. Not affiliated with OpenAI.
 
-## Stop Restarting Every Codex Session From Zero
+## Your Codex Is Smart. But New Sessions Still Forget.
 
-If you use Codex across more than one project, you have probably felt this problem:
+You open a new Codex window.
 
-- a new chat does not know what happened before
-- important decisions disappear into old conversations
-- project context gets pasted again and again
-- prompts become too long, slow, and stale
-- Codex has to rediscover the same files, rules, and preferences
-- multi-project work becomes hard to route and maintain
+It does not know what you decided yesterday.
 
-Codex Smart Project Memory solves this by turning your important project logic into small, durable files that Codex can read quickly at the start of a session.
+You start a new project.
 
-This is not a giant prompt. It is a lightweight memory architecture.
+It does not understand the important logic from your other projects.
 
-## What You Get
+You ask it to continue.
 
-This repository gives you a ready-to-use Codex Skill and a reusable project memory system:
+It asks basic questions again, scans the same files again, and sometimes feels strangely less capable even though the model is powerful.
 
-- a startup chain for new Codex sessions
-- a multi-project registry
-- a smart router for vague project requests
-- project-level context packs
-- session handoff snapshots
+The problem is usually not the model.
+
+The problem is missing project memory.
+
+## Give Codex A Lightweight Project Brain
+
+Codex Smart Project Memory turns your important project logic into small, durable files that Codex can read quickly at the start of a session.
+
+Instead of pasting a giant prompt every time, you get a clean memory system:
+
+- global startup rules
+- project registries
+- smart project routing
+- context packs for each project
 - decision logs
+- session snapshots
 - asset indexes
 - memory maintenance rules
-- scripts to initialize, add projects, write snapshots, and validate the workspace
+- scripts to initialize and validate everything
 
-The result: Codex can act less like a blank new assistant and more like a project-aware collaborator.
+The result: Codex can recover context faster, understand your project structure, and continue work with fewer repeated explanations.
 
-## The Big Idea
+## Try It In 3 Minutes
 
-Most AI memory workflows fail because they try to save everything.
+Clone this repository, install or copy the Skill folder, then ask Codex:
 
-This project does the opposite.
+```text
+Use $codex-smart-project-memory to initialize a smart project memory workspace for my Codex projects.
+```
 
-It saves only the context that actually helps future work:
+Or run the scripts directly:
 
-- what the project is
-- what the current state is
-- what decisions were made
-- where important files live
-- what the user prefers
-- what the next session should read first
+```bash
+python skill/codex-smart-project-memory/scripts/init_memory_workspace.py --root ./CodexProjectMemory --root-name "My Codex Memory"
+python skill/codex-smart-project-memory/scripts/new_project.py --root ./CodexProjectMemory --name "My First Project" --category software
+python skill/codex-smart-project-memory/scripts/validate_memory_workspace.py --root ./CodexProjectMemory
+```
 
-That keeps the system fast, understandable, and easy to maintain.
+If it helps you, star the repository so more Codex users can find it.
+
+## What It Fixes
+
+### 1. New chats lose context
+
+A fresh Codex session often does not know your previous decisions, current project state, or next steps.
+
+This system gives each project a `04_context_pack.md` file so new sessions can recover the important context first.
+
+### 2. Multi-project work gets messy
+
+When you manage several apps, agents, content workflows, or business ideas, Codex may not know which project you mean.
+
+This system adds a project registry and smart router so vague requests can be routed to the right project without scanning everything.
+
+### 3. Important decisions disappear
+
+Decisions buried in chat history are hard to reuse.
+
+This system gives you `02_decisions.md` and `05_conversation_memory.md` so durable decisions and handoffs can survive across sessions.
+
+### 4. Prompts become too large
+
+A giant memory prompt can become slow, stale, and painful to maintain.
+
+This system uses small files and progressive context loading, so Codex reads only what the task needs.
+
+### 5. Codex feels less intelligent than it should
+
+When an assistant lacks context, it repeats work, asks basic questions, and misses the user's real intent.
+
+This workflow gives Codex the project context it needs to act more intelligently.
 
 ## Before And After
 
 Before:
 
 ```text
-New chat: What is this project again?
-You: Let me paste a huge prompt...
-Codex: I need to scan the repo again...
-You: We already decided this yesterday.
+You: Continue the project.
+Codex: What project is this? What did we decide? Where are the files?
+You: Let me paste the context again...
 ```
 
 After:
 
 ```text
-New chat: Read the startup chain and this project's context pack.
-Codex: I understand the project, current status, decisions, and next action.
-You: Continue from where we stopped.
+You: Continue the project.
+Codex: I will read the startup chain, route to the project, load the context pack, and continue from the latest snapshot.
 ```
 
-## Who This Is For
+## What You Get
 
-Use this if you are:
-
-- a developer working across many repositories
-- a founder building several AI products at once
-- a creator managing scripts, prompts, videos, and assets
-- a team using Codex for product, engineering, content, or operations
-- a power user who wants Codex to remember project logic without pasting huge prompts
-
-## Why It Works
-
-Codex Smart Project Memory uses a three-layer memory model:
-
-1. **Fast memory**: tiny global rules and user preferences.
-2. **Project memory**: each project's status, decisions, context pack, and assets.
-3. **Archive memory**: older details that are only loaded when needed.
-
-This gives Codex enough context to be useful without forcing every session to load everything.
-
-## Repository Layout
+This repository includes a ready-to-use Codex Skill plus a reusable memory architecture:
 
 ```text
 skill/codex-smart-project-memory/
@@ -104,22 +122,13 @@ skill/codex-smart-project-memory/
   assets/templates/
 ```
 
-The Skill lives in `skill/codex-smart-project-memory`. The outer repository exists for GitHub discovery, documentation, and community use.
-
-## Quick Start
-
-After installing the Skill in Codex, ask:
+Included scripts:
 
 ```text
-Use $codex-smart-project-memory to initialize a smart project memory workspace for my Codex projects.
-```
-
-You can also run the scripts directly:
-
-```bash
-python skill/codex-smart-project-memory/scripts/init_memory_workspace.py --root ./CodexProjectMemory --root-name "My Codex Memory"
-python skill/codex-smart-project-memory/scripts/new_project.py --root ./CodexProjectMemory --name "My First Project" --category software
-python skill/codex-smart-project-memory/scripts/validate_memory_workspace.py --root ./CodexProjectMemory
+init_memory_workspace.py     Create a memory workspace.
+new_project.py               Add a new project with all required memory files.
+session_snapshot.py          Append an end-of-session handoff.
+validate_memory_workspace.py Check that required files exist.
 ```
 
 ## Memory Workspace Structure
@@ -152,32 +161,31 @@ AGENTS.md
 
 The rule is simple: read the smallest useful context first, then load deeper files only when the task needs them.
 
-## Example Use Cases
+## Who Should Use This
 
-### Multi-project founder
+Use Codex Smart Project Memory if you are:
 
-You are building several products at once. Codex can route each request to the right project, read the right context pack, and avoid mixing unrelated decisions.
+- a developer working across many repositories
+- a founder building several AI products at once
+- a creator managing scripts, prompts, videos, and assets
+- a team using Codex for product, engineering, content, or operations
+- a power user who wants Codex memory without giant prompts
+- anyone who wants better Codex session continuity and context engineering
 
-### Software team
+## Why It Works
 
-Your team wants Codex to understand project structure, decisions, and active work without putting everything into one enormous prompt.
+Most AI memory workflows try to save everything.
 
-### Content creator
+This one saves the right things:
 
-You manage scripts, prompts, character notes, video assets, and publishing workflows. Codex can find the right project memory before generating new work.
+- what the project is
+- what the current state is
+- what decisions were made
+- where important files live
+- what the user prefers
+- what the next session should read first
 
-### AI workflow builder
-
-You want a repeatable structure that makes Codex more consistent across new chats, new windows, and new projects.
-
-## Included Scripts
-
-```text
-init_memory_workspace.py     Create a memory workspace.
-new_project.py               Add a new project with all required memory files.
-session_snapshot.py          Append an end-of-session handoff.
-validate_memory_workspace.py Check that required files exist.
-```
+That keeps Codex memory fast, explicit, searchable, and easy to maintain.
 
 ## Benefits
 
@@ -189,12 +197,17 @@ validate_memory_workspace.py Check that required files exist.
 - Lower prompt bloat
 - Easier onboarding for new Codex users
 - Better separation between active context and archived history
+- A practical `AGENTS.md` workflow for persistent project memory
 
 ## What This Is Not
 
 This is not magic hidden memory.
 
 Codex can only reliably recover what is written into files. This project gives you a practical structure for saving the right things in the right places.
+
+## Search Keywords
+
+Codex memory, Codex Skill, Codex project memory, persistent memory, AI agent memory, `AGENTS.md`, context engineering, project context, session continuity, smart project routing, developer tools, coding agent workflow.
 
 ## Recommended GitHub Topics
 
@@ -212,9 +225,18 @@ developer-tools
 session-continuity
 ```
 
-## Community
+## Download And Try It
 
-If this helps you, star the repository so more Codex users can find it.
+If you want Codex to stop starting from zero, try Codex Smart Project Memory today:
+
+1. Star this repository.
+2. Clone or download the project.
+3. Install or copy the Skill folder.
+4. Initialize your memory workspace.
+5. Add your first project.
+6. Start your next Codex session with real project context.
+
+## Community
 
 Open an Issue for bugs, missing templates, or workflow ideas. Use Discussions for examples, setup questions, and improvement suggestions.
 
@@ -226,9 +248,7 @@ Contact:
 
 - WeChat: `snn6882`
 
-WhatsApp contact can be added here later.
-
-Tip: keep the public repository professional. Use contact links for real setup help, examples, support, and community building.
+WhatsApp and Telegram contact can be added here later.
 
 ## License
 
