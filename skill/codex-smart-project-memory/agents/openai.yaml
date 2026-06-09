@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex Smart Project Memory"
+  short_description: "Smarter Codex memory without prompt bloat"
+  default_prompt: "Use $codex-smart-project-memory to initialize a lightweight smart project memory workspace for my Codex projects."
