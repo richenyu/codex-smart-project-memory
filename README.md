@@ -24,6 +24,29 @@ The problem is usually not the model.
 
 The problem is missing project memory.
 
+## This Is Not Just One Big Folder
+
+Many users try to fix Codex memory by dumping every project, note, prompt, document, and old conversation into one shared folder.
+
+That usually makes the problem worse.
+
+When Codex has to scan too much at once, it gets more noise, more stale context, more conflicting instructions, and more irrelevant files. The session becomes slower, the prompt gets bloated, and Codex can feel less intelligent because it is carrying the wrong context.
+
+Codex Smart Project Memory is different.
+
+It is not a folder dump. It is a lightweight routing and memory system:
+
+- root files help Codex understand where to start
+- project registries help Codex find the right project
+- smart routing prevents unnecessary full-folder scans
+- context packs keep each project's active memory small
+- session snapshots preserve important handoffs
+- asset indexes tell Codex where concrete files live only when needed
+
+The goal is not to make Codex read everything.
+
+The goal is to help Codex read the right thing first.
+
 ## Give Codex A Lightweight Project Brain
 
 Codex Smart Project Memory turns your important project logic into small, durable files that Codex can read quickly at the start of a session.
@@ -91,6 +114,12 @@ This system uses small files and progressive context loading, so Codex reads onl
 When an assistant lacks context, it repeats work, asks basic questions, and misses the user's real intent.
 
 This workflow gives Codex the project context it needs to act more intelligently.
+
+### 6. Big shared folders create context overload
+
+A single folder full of every project can look organized to a human, but it can overload Codex with irrelevant context.
+
+This workflow separates global memory, project memory, handoffs, and assets so Codex can route first and read selectively.
 
 ## Before And After
 
