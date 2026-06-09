@@ -251,7 +251,23 @@ Codex can only reliably recover what is written into files. This project gives y
 
 ## Search Keywords
 
-Codex memory, codex-memory, Codex Skill, OpenAI Codex, Codex starter kit, Codex beginner tool, Codex for beginners, Codex tutorial, Codex setup guide, Codex workflow, Codex tools, Codex project memory, persistent memory, AI agent memory, AI coding agent memory, coding agent memory, coding agent starter kit, repo-local memory, markdown memory, `AGENTS.md`, AGENTS.md template, context engineering, project context, session continuity, smart project routing, coding agent workflow.
+Codex memory, codex-memory, Codex intelligence, make Codex smarter, smarter Codex, context-aware Codex, project-aware Codex, Codex Skill, OpenAI Codex, Codex starter kit, Codex beginner tool, Codex for beginners, Codex tutorial, Codex setup guide, Codex workflow, Codex project memory, persistent memory, agent memory, AI agent memory, AI coding assistant memory, AI coding agent memory, coding agent memory, coding agent context, coding agent starter kit, repo-local memory, markdown memory, `AGENTS.md`, AGENTS.md template, context engineering, project context, session continuity, context loss between sessions, new chat forgets context, agent amnesia, smart project routing, coding agent workflow.
+
+## Common Questions This Helps Answer
+
+People often search for this problem in question form:
+
+- How do I make Codex remember my project context?
+- How do I make Codex smarter across new chats?
+- How do I stop Codex from starting from zero every session?
+- What is the best `AGENTS.md` template for Codex?
+- How do I create persistent memory for Codex?
+- How do I manage project memory for AI coding agents?
+- How do I avoid context overload from one giant project folder?
+- How do I keep coding agents from forgetting decisions between sessions?
+- How do I build a context-aware AI coding assistant workflow?
+
+Codex Smart Project Memory is designed for these searches: it combines Codex memory, Codex intelligence, `AGENTS.md`, context engineering, smart routing, and session continuity into one beginner-friendly workflow.
 
 ## Recommended GitHub Topics
 
