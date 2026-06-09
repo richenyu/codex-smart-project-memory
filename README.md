@@ -240,11 +240,19 @@ If you want Codex to stop starting from zero, try Codex Smart Project Memory tod
 
 Open an Issue for bugs, missing templates, or workflow ideas. Use Discussions for examples, setup questions, and improvement suggestions.
 
-## Contact And Setup Help
+## Free Bonus And Setup Help
 
-Need help setting up Codex Smart Project Memory, customizing it for your own workflow, or building a smarter Codex project system?
+Want more Codex memory workflows, setup examples, and practical prompt patterns?
 
-Contact:
+I am preparing a free bonus pack for early users, including:
+
+- a Codex memory setup checklist
+- extra `AGENTS.md` workflow examples
+- project memory templates for different use cases
+- session handoff prompt patterns
+- tips for making Codex feel smarter across new chats and projects
+
+If you want the bonus pack or need help adapting this workflow to your own projects, contact me:
 
 - WeChat: `snn6882`
 
