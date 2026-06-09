@@ -220,12 +220,13 @@ Open an Issue for bugs, missing templates, or workflow ideas. Use Discussions fo
 
 ## Contact And Setup Help
 
-For setup help, customization, or collaboration, add your preferred contact links here:
+Need help setting up Codex Smart Project Memory, customizing it for your own workflow, or building a smarter Codex project system?
 
-```text
-WhatsApp: <your WhatsApp link>
-WeChat: <your WeChat ID>
-```
+Contact:
+
+- WeChat: `snn6882`
+
+WhatsApp contact can be added here later.
 
 Tip: keep the public repository professional. Use contact links for real setup help, examples, support, and community building.
 
