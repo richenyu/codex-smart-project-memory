@@ -13,3 +13,27 @@ build/
 _tmp*/
 tmp/
 CodexProjectMemory/
+# Local secrets and private configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+credentials.json
+secrets.json
+secret.json
+*.secret
+*.token
+*.credentials
+
+# Local private notes
+_private/
+.local/
