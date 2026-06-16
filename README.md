@@ -207,6 +207,12 @@ AGENTS.md
 
 The rule is simple: read the smallest useful context first, then load deeper files only when the task needs them.
 
+## Memory Intelligence Upgrade Workflow
+
+If you already have a messy project folder, a giant memory prompt, or several scattered Codex workspaces, read the [Memory Intelligence Upgrade Workflow](docs/workflows/memory-intelligence-upgrade-workflow.md).
+
+It explains how to choose one canonical memory root, make `AGENTS.md` a startup contract, add smart routing, create project skeletons, validate the system, and keep private data out of public templates.
+
 ## Who Should Use This
 
 Use Codex Smart Project Memory if you are:
